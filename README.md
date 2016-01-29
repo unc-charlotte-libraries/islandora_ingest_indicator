@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Designed to communicate Islandora ingest status to Archivists; a methodology for integrating Blink(1) indicator lights with an Islandora ingest server.
+Designed to communicate Islandora ingest status to Archivists; a methodology for integrating Blink(1) indicator lights with an Islandora ingest server.   We have programmed Blink(1) to glow GREEN for indicating "ready for ingest" and RED for "ingest currently running".
 
 
 
