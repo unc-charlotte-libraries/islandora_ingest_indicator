@@ -38,18 +38,18 @@ The included "ingestwatcher.sh" script also watches Drupal's sites/default/files
 
 Blink(1) includes the [Blink1Control](http://blink1.thingm.com/blink1control/) desktop software, which can be configured to retrieve a URL every X seconds.   Your URL should point to a plain text file located on your Islandora ingest web server.
 
-Blink(1) reads and responds to a hex encoded color contained in the plain text file.   Updating the plain text file, updates the Blink(1).
+Blink(1) reads and responds to a hex encoded color contained in the plain text file.   Updating the plain text file with a hex color, updates the Blink(1) device's colors.
 
 In Blink1Control software, you will find the URL retrieving function under the Tools tab.
 
 
 ## General Operation
 
-The included "ingestwatcher.sh" employs "ps aux" to detect if drush is currently running, and "lsof" to detect files that are open for writing.
+The included "ingestwatcher.sh" employs "ps" to detect if drush is currently running, and "lsof" to detect files that are open for writing.
 
 If Islandora ingest operations are detected, ingestwatcher.sh writes the hex color RED to a web-accessible plain text file.
 
-If an ingest is not running, ingestwatcher.sh writes the hex color GREEN to the same web-accessible plain text file.
+If an Islandora ingest is not running, ingestwatcher.sh writes the hex color GREEN to the same web-accessible plain text file.
 
 
 ## Customization
@@ -64,7 +64,7 @@ If an ingest is not running, ingestwatcher.sh writes the hex color GREEN to the 
 
 ## Troubleshooting/Issues
 
-* Watch your Apache access log to ensure Blink1Control software is communicating successfully with your Islandora ingest web server.
+* Watch your Apache access.log to ensure Blink1Control software is communicating successfully with your Islandora ingest web server.
 
 
 ## Maintainers
