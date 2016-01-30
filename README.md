@@ -31,7 +31,14 @@ For our Islandora ingest system, we have re-routed ingest-related directories to
 * Fedora's "upload" directory
 * islandora_bagit's output directories
 
-The included "ingestwatcher.sh" script also watches Drupal's sites/default/files directory in an attempt to detect web-based ingests.
+The included "ingestwatcher.sh" script also watches Drupal's sites/default/files directory in an attempt to detect web-based ingests.  
+
+Add the ingestwatcher script to your crontab, set it to run every five minutes:
+```
+#blink islandora ingestwatcher
+*/5 * * * * /usr/local/bin/ingestwatcher.sh >/dev/null 2>&1
+```
+
 
 
 ## Blink(1) Configuration
