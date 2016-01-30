@@ -33,7 +33,7 @@ For our Islandora ingest system, we have re-routed ingest-related directories to
 
 The included "ingestwatcher.sh" script also watches Drupal's sites/default/files directory in an attempt to detect web-based ingests.  
 
-Add the ingestwatcher script to your crontab, set it to run every five minutes:
+Customize the ingestwatcher script for your directory paths, then add the script to your crontab; set it to run every five minutes:
 ```
 #blink1 islandora ingestwatcher
 */5 * * * * /usr/local/bin/ingestwatcher.sh >/dev/null 2>&1
