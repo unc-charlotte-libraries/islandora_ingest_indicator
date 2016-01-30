@@ -35,7 +35,7 @@ The included "ingestwatcher.sh" script also watches Drupal's sites/default/files
 
 Add the ingestwatcher script to your crontab, set it to run every five minutes:
 ```
-#blink islandora ingestwatcher
+#blink1 islandora ingestwatcher
 */5 * * * * /usr/local/bin/ingestwatcher.sh >/dev/null 2>&1
 ```
 
